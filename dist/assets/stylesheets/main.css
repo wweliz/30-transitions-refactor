@@ -1,13 +1,25 @@
-.main-container {
+/* Bounding box all content on page*/
+
+.container-all {
 	width: 960px;
 	position: relative;
 	margin:0 auto;
+}
+
+/* Bounding box for each example */
+.main-container {
+	height: 500px;
+	width: 960px;
+	position: relative;
+	margin: 10px;
+	background-color: #e9e9e9;
 }
 
 a, a:visited {
 	color: white;
 }
 
+/* Example 1 */
 .gmail-icon {
 	height: 20px;
     width: 200px;
@@ -21,7 +33,7 @@ a, a:visited {
 .gmail-icon a, .gmail-icon a:visited {
 	display: inline-block;
 	color:black;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .gmail-icon:hover a {
@@ -29,12 +41,13 @@ a, a:visited {
     color: #e13a2a;
 }
 
+/* Example 2 */
 .progress-bar {
 	background-color: #083451;
 	border-radius: 13px;
 	padding: 3px;
 }
-    
+
 .progress-bar-filler {
 	background-color: #a8a8a8;
 	width: 40%;
@@ -42,6 +55,7 @@ a, a:visited {
 	border-radius: 10px;
 }
 
+/* Example 3 */
 .dl-icon {
 	height: 25px;
 	width: 25px;
@@ -55,7 +69,6 @@ a, a:visited {
 	display: inline-block;
 	height: 35px;
 	padding-top: 62.5px;
-
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -81,8 +94,11 @@ a, a:visited {
 	box-shadow:         0px 0px 15px #555;
 }
 
-input[disabled].btn-no-clicky:hover, input[disabled].btn-no-clicky:focus{}
+/* Example 4 */
+input[disabled].btn-no-clicky:hover
+input[disabled].btn-no-clicky:focus
 
+/* Example 5 */
 .wweliz-logo-rotate {
 	height:170px;
 	width: 170px;
@@ -105,6 +121,7 @@ input[disabled].btn-no-clicky:hover, input[disabled].btn-no-clicky:focus{}
 	transition: all 1s ease-in-out;
 }
 
+/* Example 6 */
 .wweliz-logo-grow:hover {
 	-webkit-transform: translate(50%, 50%) scale(2, 2);
 	-moz-transform: translate(50%, 50%) scale(2, 2);
@@ -117,8 +134,8 @@ input[disabled].btn-no-clicky:hover, input[disabled].btn-no-clicky:focus{}
 	transition: all 1s ease-in-out;
 }
 
-
-.wweliz-logo-three-d:hover {
+/* Example 7 */
+.wweliz-logo-shift:hover {
 	-webkit-transform: translate(10px, 10px);
 	-moz-transform: translate(10px, 10px);
 	-o-transform: translate(10px, 10px);
@@ -130,6 +147,7 @@ input[disabled].btn-no-clicky:hover, input[disabled].btn-no-clicky:focus{}
 	transition: all 0.5s ease-in-out;
 }
 
+/* Example 8 */
 .gallery-bottom{
 	height: 75px;
 	display: inline-block;
@@ -162,6 +180,29 @@ input[disabled].btn-no-clicky:hover, input[disabled].btn-no-clicky:focus{}
 	transform:(0);
 }
 
+/* Example 9 */
+.wordsleft {
+	font-family: 'Open Sans', sans-serif;
+	color: #be5cff;
+	display: inline-block;
+	opacity:1;
+	margin: 0;
+}
+
+.wordsright {
+	font-family: 'Open Sans', sans-serif;
+	color: #be5cff;
+	display: inline-block;
+	opacity:0;
+	margin: 0;
+}
+
+.wordsleft:active, .wordsright:active {
+	display: inline-block;
+	opacity:1;
+}
+
+/* Example 10 */
 figure#bounce-logo {
 	position: absolute;
 	margin: 0;
@@ -186,27 +227,7 @@ figure#bounce-logo {
   -o-transition:      @transition;
 }
 
-.wordsleft {
-	font-family: 'Open Sans', sans-serif;
-	color: #be5cff;
-	display: inline-block;
-	opacity:1;
-	margin: 0;
-}
-
-.wordsright {
-	font-family: 'Open Sans', sans-serif;
-	color: #be5cff;
-	display: inline-block;
-	opacity:0;
-	margin: 0;
-}
-
-.wordsleft:active, .wordsright:active {
-	display: inline-block;
-	opacity:1;
-}
-
+/* Example 11 */
 .line {
 	min-height: 1px;
 	height:1px;
@@ -231,6 +252,7 @@ figure#bounce-logo {
 	transition: opacity .05s ease-in;
 }
 
+/* Example 12 */
 .blackbox {
 	font-family: 'Open Sans', sans-serif;
 	width:100px;
@@ -250,6 +272,7 @@ figure#bounce-logo {
 	visibility:hidden;
 }
 
+/* Example 13 */
 .square1{
 	width:75px;
 	height:75px;
@@ -284,6 +307,7 @@ figure#bounce-logo {
   }
 }
 
+/* Example 14 */
 .beachball {
     height: 25px;
     width: 25px;
@@ -296,6 +320,7 @@ figure#bounce-logo {
   animation: rotating 1s linear infinite;
 }
 
+/* Example 15 */
 .zwrap.perspective {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 75px;
@@ -310,7 +335,7 @@ figure#bounce-logo {
 	margin: 0;
 }
 
-
+/* Example 16 */
 .nps a, .nps a:visited {
 	font-family: 'Open Sans', sans-serif;
 	text-align:left;
@@ -319,7 +344,6 @@ figure#bounce-logo {
 	padding: 0;
 	margin:0;
 }
-
 
 .nps a:hover {
 	font-family: 'Open Sans', sans-serif;
@@ -331,6 +355,7 @@ figure#bounce-logo {
 	margin:0;
 }
 
+/* Example 17 */
 .hypbox {
 	display: block;
 	border: 1px solid;
@@ -348,8 +373,9 @@ figure#bounce-logo {
 
 .hypbox a:hover {
 	background: #f8f8f8;
-	}
+}
 
+/* Example 18 */
 .door {
 	width:115px;
 	height:283px;
@@ -368,6 +394,7 @@ figure#bounce-logo {
     }
 }
 
+/* Example 19 */
 .s2c {
 	height: 75px;
 	width: 75px;
@@ -376,6 +403,7 @@ figure#bounce-logo {
 	-moz-transition:all 1s;
     transition:all 1s;
 }
+
 .s2c:hover {
     border-radius:50%;
     background: #083451;
@@ -384,6 +412,7 @@ figure#bounce-logo {
 	transition:all 1s;
 }
 
+/* Example 20 */
 .path {
   stroke-dasharray: 1700;
   stroke-dashoffset: 1700;
@@ -392,17 +421,14 @@ figure#bounce-logo {
 }
 
 @-webkit-keyframes dash {
-    to {stroke-dashoffset: 0;
-    }
+    to {stroke-dashoffset: 0;}
 }
 
 @keyframes dash {
-
-  to {
-    stroke-dashoffset: 0;
-  }
+	to {stroke-dashoffset: 0;}
 }
 
+/* Example 21 */
 .ballack {
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
@@ -411,14 +437,17 @@ figure#bounce-logo {
 	transition: all .5s ease-in-out;
 }
 
-.grayscale:hover{
+/* Example 22 */
+.grayscale:hover {
 	-webkit-filter:grayscale(1);
 }
 
+/* Example 23 */
 .sepia:hover {
 	-webkit-filter:sepia(1);
 }
 
+/* Example 24 */
 .saturate:hover{
 	-webkit-filter:saturate(0.3);
 }
@@ -427,9 +456,12 @@ figure#bounce-logo {
 	-webkit-filter:saturate(2.5);
 }
 
+/* Example 25 */
 .hue-rotate:hover{
 	-webkit-filter:hue-rotate(90deg);
 }
+
+/* Example 26 */
 .contrast:hover{
 	filter: contrast(2)
 }
