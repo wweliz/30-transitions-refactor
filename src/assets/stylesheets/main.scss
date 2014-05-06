@@ -2,6 +2,7 @@ $redish: #e13a2a;
 $dkblue: #083451;
 $golden: #fa9d26;
 $gray: #a8a8a8;
+$lightestgray: #e9e9e9;
 
 /* Universal styling elements */
 * {
@@ -9,6 +10,7 @@ $gray: #a8a8a8;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
+
 
 /* Bounding box all content on page*/
 .container-all {
@@ -23,13 +25,13 @@ $gray: #a8a8a8;
 	height: 500px;
 	border-radius: 5px;
 	margin: 10px;
-	background-color: #e9e9e9;
+	background-color: $lightestgray;
 }
 
 /* Example 1 */
 .gmail-icon {
 	a:visited {
-		color:black;
+		color:$gray;
 		text-decoration: none;
 	}
 
@@ -93,15 +95,16 @@ $gray: #a8a8a8;
 }
 
 /* Example 4 */
-input[disabled].btn-no-clicky:hover
-input[disabled].btn-no-clicky:focus
+ input[type=submit] {}
 
 /* Example 5 */
+
 .wweliz-logo-rotate {
 	height:170px;
 	width: 170px;
+	z-index: 5;
 
-	:hover {
+	&:hover {
 		-webkit-transform:rotate(360deg);
 		-moz-transform:rotate(360deg);
 		-o-transform:rotate(360deg);
@@ -170,7 +173,7 @@ input[disabled].btn-no-clicky:focus
 
 /* Example 9 */
 .wordsleft {
-	color: #be5cff;
+	color: $redish;
 	opacity:1;
 	margin: 0;
 
@@ -178,7 +181,7 @@ input[disabled].btn-no-clicky:focus
 }
 
 .wordsright {
-	color: #be5cff;
+	color: $redish;
 	opacity:0;
 	margin: 0;
 
@@ -190,7 +193,7 @@ input[disabled].btn-no-clicky:focus
 	min-height: 1px;
     width: 82px;
     display: block;
-    background-color: black
+    background-color: $dkblue;
 }
 
 /* Example 10 */
@@ -220,7 +223,7 @@ figure#bounce-logo {
 
 /* Example 11 */
 .wtp {
-	color: #ff1298;
+	color: $dkblue;
 	opacity: .2;
 
 	&:hover {
@@ -256,32 +259,16 @@ figure#bounce-logo {
 .square1 {
 	width:75px;
 	height:75px;
-	background-color:#fea83b;
+	background-color: $dkblue;
 	position:absolute;
 	-webkit-animation:box-lr 5s infinite;
 }
 
-@-webkit-keyframes box-lr{
-	0%		{left:100%;}
-	50%		{left:10%;}
-	100%	{left:100%;}
-}
-
-@-webkit-keyframes rotating {
-  from {
-    transform: rotate(0deg) linear;
-    -ms-transform: rotate(0deg) linear;
-    -moz-transform: rotate(0deg) linear;
-    -webkit-transform: rotate(0deg) linear;
-    -o-transform: rotate(0deg) linear;
-  }
-  to {
-    transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-  }
+	@-webkit-keyframes box-lr{
+		0%		{left:100%;}
+		50%		{left:10%;}
+		100%	{left:100%;}
+	}
 }
 
 /* Example 14 */
@@ -299,6 +286,7 @@ figure#bounce-logo {
 
 /* Example 15 */
 .zwrap.perspective {
+	color: $golden;
 	font-size: 75px;
 	-webkit-perspective: 300px;
 	margin: 0;
@@ -312,9 +300,11 @@ figure#bounce-logo {
 
 /* Example 16 */
 .nps a {
+	color: $dkblue;
+
 	&:visited{
 		text-align:left;
-		color: black;
+		color: $dkblue;
 		display: inline-block;
 		padding: 0;
 		margin:0;
@@ -323,7 +313,7 @@ figure#bounce-logo {
 	&:hover {
 		text-align:left;
 		text-decoration: underline;
-		color: red;
+		color: $redish;
 		display: inline-block;
 		padding: 0;
 		margin:0;
@@ -331,22 +321,17 @@ figure#bounce-logo {
 }
 
 /* Example 17 */
-.hypbox {
-	display: block;
-	border: 1px solid;
-	width: 50%;
-	height: 20px;
+.hypobox a {
+	font-size: 20px;
+	color: $dkblue;
+	background-color: $gray;
+	width: 200px;
+	height: 35px;
+	padding-top: 10px;
 
-	& a {
-		height: 100%;
-		display: block;
-		background: #c8c8c8;
-		height: 100%;
-		text-align: center;
-	}
-
-	& a:hover {	
-		background: #f8f8f8;
+	&:hover {
+		color: $gray;
+		background: $dkblue;
 	}
 }
 
@@ -368,14 +353,14 @@ figure#bounce-logo {
 .s2c {
 	height: 75px;
 	width: 75px;
-	background: #fea83b;
+	background: $dkblue;
 	-webkit-transition:all 1s;
 	-moz-transition:all 1s;
     transition:all 1s;
 
     &:hover {
     	border-radius:50%;
-	    background: #083451;
+	    background: $golden;
 	    -webkit-transition:all 1s;
 		-moz-transition:all 1s;
 		transition:all 1s;
@@ -391,44 +376,69 @@ figure#bounce-logo {
 }
 
 @-webkit-keyframes dash {to {stroke-dashoffset: 0;}}
-
 @keyframes dash {to {stroke-dashoffset: 0;}}
 
-/* Example 21 */
+/* Examples 21-26 */
 .ballack {
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out;
+	display: block;
 }
 
-/* Example 22 */
+/* Example 21 */
 .grayscale:hover {-webkit-filter: #{'grayscale(1)'};}
 
-/* Example 23 */
+/* Example 22 */
 .sepia:hover {-webkit-filter: #{'sepia(1)'};}
 
-/* Example 24 */
+/* Example 23 */
 .saturate {
 	&:hover {-webkit-filter: #{'saturate(0.3)'};}
 	&:active {-webkit-filter: #{'saturate(2.5)'};}
 }
 
-/* Example 25 */
+/* Example 24 */
 .hue-rotate:hover {-webkit-filter: #{'hue-rotate(90deg)'};}
 
-/* Example 26 */
+/* Example 25 */
 .contrast {
 	&:hover {-webkit-filter: #{'contrast(2)'};}
 	&:active {-webkit-filter: #{'contrast(0.5)'};}
 }
 
+/* Example 26 */
 
+.c2s {
+	height: 75px;
+	width: 75px;
+	background: $golden;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+    transition:all 1s;
+    border-radius: 50%;
 
+    &:hover {
+    	border-radius:0%;
+	    background: $dkblue;
+	    -webkit-transition:all 1s;
+		-moz-transition:all 1s;
+		transition:all 1s;
+    }
+}
 
+/* Example 27 */
+.square1 {
+	-webkit-animation:updown 5s infinite;
+}
 
+@-webkit-keyframes updown{
+	0%		{top:70%;}
+	50%		{top:10%;}
+	100%	{top:70%;}
+}
 
-
-
+}
 
