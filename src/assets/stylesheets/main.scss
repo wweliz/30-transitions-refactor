@@ -1,3 +1,5 @@
+@import "bourbon";
+
 $redish: #e13a2a;
 $dkblue: #083451;
 $golden: #fa9d26;
@@ -256,20 +258,21 @@ figure#bounce-logo {
 }
 
 /* Example 13 */
+@-webkit-keyframes box-lr{
+	0%		{left:100%;}
+	50%		{left:10%;}
+	100%	{left:100%;}
+}
+
 .square1 {
 	width:75px;
 	height:75px;
 	background-color: $dkblue;
 	position:absolute;
 	-webkit-animation:box-lr 5s infinite;
+
 }
 
-	@-webkit-keyframes box-lr{
-		0%		{left:100%;}
-		50%		{left:10%;}
-		100%	{left:100%;}
-	}
-}
 
 /* Example 14 */
 .beachball {
@@ -431,14 +434,31 @@ figure#bounce-logo {
 
 /* Example 27 */
 .square1 {
-	-webkit-animation:updown 5s infinite;
+	-webkit-animation:updown 3s infinite;
 }
 
 @-webkit-keyframes updown{
-	0%		{top:70%;}
-	50%		{top:10%;}
-	100%	{top:70%;}
-}
+	0% {
+		top: 0;
+		background: green;
+	}
 
+	25% {
+		width: 100px;
+	}
+
+	45% {
+		width: 75px;
+	}
+	
+	50%	{
+		top: 425px;
+		background: pink;
+	}
+	
+	100% {
+		top: 0;
+		background: blue;
+	}
 }
 
