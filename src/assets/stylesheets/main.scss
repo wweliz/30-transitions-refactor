@@ -345,28 +345,23 @@ figure#bounce-logo {
 		text-align: center;
 	}
 
-	& a:hover {
+	& a:hover {	
 		background: #f8f8f8;
 	}
 }
 
 /* Example 18 */
 .door {
-	width:115px;
-	height:283px;
-	margin:20px;
-    -webkit-animation: hinge 0.75s ease 0s infinite alternate;
+	width: 115px;
+	height: 283px;
+	margin: 20px;
+	-webkit-animation: hinge 0.75s ease 0s infinite alternate;
+	-webkit-transform-origin: 0% 0%;
 }
 
 @-webkit-keyframes hinge {
-    from {
-       -webkit-transform: perspective(300) rotateY(-90deg);
-       -webkit-transform-origin: 0% 0%;
-    }
-    to {
-       -webkit-transform: perspective(300) rotateY(0deg);
-        -webkit-transform-origin: 0% 0%;
-    }
+	from {-webkit-transform: perspective(300) rotateY(-90deg);}
+	to {-webkit-transform: perspective(300) rotateY(0deg);}
 }
 
 /* Example 19 */
