@@ -1,0 +1,439 @@
+$redish: #e13a2a;
+$dkblue: #083451;
+$golden: #fa9d26;
+$gray: #a8a8a8;
+
+/* Universal styling elements */
+* {
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+/* Bounding box all content on page*/
+.container-all {
+	width: 960px;
+	margin:0 auto;
+}
+
+/* Bounding box for each example */
+.main-container {
+	position: relative;
+	width: 960px;
+	height: 500px;
+	border-radius: 5px;
+	margin: 10px;
+	background-color: #e9e9e9;
+}
+
+/* Example 1 */
+.gmail-icon {
+	a:visited {
+		color:black;
+		text-decoration: none;
+	}
+
+	&:hover a {
+		color: $redish;
+		text-decoration: underline;
+	}
+}
+
+/* Example 2 */
+.progress-bar {
+	width: 200px;
+	height: 20px;
+	padding: 3px;
+	border-radius: 13px;
+	background-color: $dkblue;
+}
+
+.filler {
+	display: block;
+	width: 80px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: $golden;
+}
+
+/* Example 3 */
+.dl-icon {
+	height: 25px;
+	width: 25px;
+	padding: 5px;
+}
+
+.download-drop-shadow {
+	text-align: left;
+	height: 35px;
+	width: 150px;
+	padding: 0px;
+	background-color: $golden;	
+	margin: 0;
+	border-radius: 5px;
+
+	& p {
+		font-size: 15px;
+		position: absolute;
+		top: 7.5px;
+		margin: 0;
+	}
+
+	&:hover {
+		background-color: $golden;
+		-webkit-box-shadow: 0px 0px 15px #555;
+		-moz-box-shadow:    0px 0px 15px #555;
+		-o-box-shadow:      0px 0px 15px #555;
+		box-shadow:         0px 0px 15px #555;
+	}
+
+	&:active {
+		background-color: $redish;
+	}
+}
+
+/* Example 4 */
+input[disabled].btn-no-clicky:hover
+input[disabled].btn-no-clicky:focus
+
+/* Example 5 */
+.wweliz-logo-rotate {
+	height:170px;
+	width: 170px;
+
+	:hover {
+		-webkit-transform:rotate(360deg);
+		-moz-transform:rotate(360deg);
+		-o-transform:rotate(360deg);
+		transform:rotate(360deg);
+		-webkit-transform-origin:center;
+		-moz-transform:center;
+		-o-transform-origin:center;
+		transform-origin:center;
+		-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		-o-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+	}
+}
+
+/* Example 6 */
+.wweliz-logo-grow:hover {
+	-webkit-transform: translate(50%, 50%) scale(2, 2);
+	-moz-transform: translate(50%, 50%) scale(2, 2);
+	-o-transform: translate(50%, 50%) scale(2, 5);
+	transform: translate(50%, 50%) scale(2, 2);
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+/* Example 7 */
+.wweliz-logo-shift:hover {
+	-webkit-transform: translate(10px, 10px);
+	-moz-transform: translate(10px, 10px);
+	-o-transform: translate(10px, 10px);
+	transform: translate(10px, 10px);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+/* Example 8 */
+.gallery-bottom {
+	height: 75px;
+	padding-left: 300.5px;
+	padding-right: 300.5px;
+
+	& ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	& ul li {list-style:none;}
+
+	& li img {
+		opacity:0.5;
+		z-index: 8;
+	}
+
+	& li img:hover {
+		opacity:1;
+		-webkit-transform: translateZ(0);
+		-moz-transform:(0);
+		-o-transform:(0);
+		transform:(0);
+	}
+}
+
+/* Example 9 */
+.wordsleft {
+	color: #be5cff;
+	opacity:1;
+	margin: 0;
+
+	&:active {opacity:1;}
+}
+
+.wordsright {
+	color: #be5cff;
+	opacity:0;
+	margin: 0;
+
+	&:active {opacity:1;}
+}
+
+.line {
+	margin-left: 141px;
+	min-height: 1px;
+    width: 82px;
+    display: block;
+    background-color: black
+}
+
+/* Example 10 */
+figure#bounce-logo {
+	position: absolute;
+	margin: 0;
+	top: 50px;
+	z-index: 2;
+	-webkit-animation-name: bounce;
+	-webkit-animation-duration:0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes bounce {
+	0% 		{top: 20px;}
+	100% 	{top: 150px;}
+}
+
+.transition {
+  -webkit-transition: transition;
+  -moz-transition:    transition;
+  -ms-transition:     transition;
+  -o-transition:      transition;
+}
+
+/* Example 11 */
+.wtp {
+	color: #ff1298;
+	opacity: .2;
+
+	&:hover {
+		opacity: 1;
+	    -webkit-transition: opacity .05s ease-in;
+		-moz-transition: opacity .05s ease-in;
+		-o-transition: opacity .05s ease-in;
+		-ms-transition: opacity .05s ease-in;
+		transition: opacity .05s ease-in;
+	}
+}
+
+/* Example 12 */
+.blackbox {
+	width:100px;
+	height:75px;
+	display: inline-block;
+	background-color:black;
+}
+
+.static {
+	padding-top: 12.5px;
+	padding-left: 12.5px;
+	padding-right: 12.5px;
+	padding-bottom: 12.5px;
+
+	&:hover {
+		visibility:hidden;
+	}
+}
+
+/* Example 13 */
+.square1 {
+	width:75px;
+	height:75px;
+	background-color:#fea83b;
+	position:absolute;
+	-webkit-animation:box-lr 5s infinite;
+}
+
+@-webkit-keyframes box-lr{
+	0%		{left:100%;}
+	50%		{left:10%;}
+	100%	{left:100%;}
+}
+
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg) linear;
+    -ms-transform: rotate(0deg) linear;
+    -moz-transform: rotate(0deg) linear;
+    -webkit-transform: rotate(0deg) linear;
+    -o-transform: rotate(0deg) linear;
+  }
+  to {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+/* Example 14 */
+.beachball {
+    height: 25px;
+    width: 25px;
+    padding: 0;
+    margin: 0;
+	-webkit-animation: rotating 1s linear infinite;
+	-moz-animation: rotating 1s linear infinite;
+	-ms-animation: rotating 1s linear infinite;
+	-o-animation: rotating 1s linear infinite;
+	animation: rotating 1s linear infinite;
+}
+
+/* Example 15 */
+.zwrap.perspective {
+	font-size: 75px;
+	-webkit-perspective: 300px;
+	margin: 0;
+
+	& .zword {
+		font-size: 75px;
+		-webkit-transform: rotateX(50deg);
+		margin: 0;
+	}	
+}
+
+/* Example 16 */
+.nps a {
+	&:visited{
+		text-align:left;
+		color: black;
+		display: inline-block;
+		padding: 0;
+		margin:0;
+	}
+
+	&:hover {
+		text-align:left;
+		text-decoration: underline;
+		color: red;
+		display: inline-block;
+		padding: 0;
+		margin:0;
+	}
+}
+
+/* Example 17 */
+.hypbox {
+	display: block;
+	border: 1px solid;
+	width: 50%;
+	height: 20px;
+
+	& a {
+		height: 100%;
+		display: block;
+		background: #c8c8c8;
+		height: 100%;
+		text-align: center;
+	}
+
+	& a:hover {
+		background: #f8f8f8;
+	}
+}
+
+/* Example 18 */
+.door {
+	width:115px;
+	height:283px;
+	margin:20px;
+    -webkit-animation: hinge 0.75s ease 0s infinite alternate;
+}
+
+@-webkit-keyframes hinge {
+    from {
+       -webkit-transform: perspective(300) rotateY(-90deg);
+       -webkit-transform-origin: 0% 0%;
+    }
+    to {
+       -webkit-transform: perspective(300) rotateY(0deg);
+        -webkit-transform-origin: 0% 0%;
+    }
+}
+
+/* Example 19 */
+.s2c {
+	height: 75px;
+	width: 75px;
+	background: #fea83b;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+    transition:all 1s;
+
+    &:hover {
+    	border-radius:50%;
+	    background: #083451;
+	    -webkit-transition:all 1s;
+		-moz-transition:all 1s;
+		transition:all 1s;
+    }
+}
+
+/* Example 20 */
+.path {
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  -webkit-animation: dash 5s linear infinite;
+  animation: dash 5s linear infinite;
+}
+
+@-webkit-keyframes dash {to {stroke-dashoffset: 0;}}
+
+@keyframes dash {to {stroke-dashoffset: 0;}}
+
+/* Example 21 */
+.ballack {
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+/* Example 22 */
+.grayscale:hover {-webkit-filter: #{'grayscale(1)'};}
+
+/* Example 23 */
+.sepia:hover {-webkit-filter: #{'sepia(1)'};}
+
+/* Example 24 */
+.saturate {
+	&:hover {-webkit-filter: #{'saturate(0.3)'};}
+	&:active {-webkit-filter: #{'saturate(2.5)'};}
+}
+
+/* Example 25 */
+.hue-rotate:hover {-webkit-filter: #{'hue-rotate(90deg)'};}
+
+/* Example 26 */
+.contrast {
+	&:hover {-webkit-filter: #{'contrast(2)'};}
+	&:active {-webkit-filter: #{'contrast(0.5)'};}
+}
+
+
+
+
+
+
+
+
+
